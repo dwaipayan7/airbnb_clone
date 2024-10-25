@@ -9,7 +9,7 @@ Future<void> saveCategoryItems() async {
   for (final Category category in categoriesList) {
     final String id =
         DateTime.now().toIso8601String() + Random().nextInt(1000).toString();
-    ref.doc("das");
+    ref.doc("data");
     await ref.doc(id).set(category.toMap());
   }
 }
