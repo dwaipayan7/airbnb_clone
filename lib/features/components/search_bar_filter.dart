@@ -23,7 +23,7 @@ class SearchBarFilter extends StatelessWidget {
                       ),
                       child: const Padding(
                           padding: EdgeInsets.symmetric(
-                            horizontal: 10,
+                            horizontal: 5,
                             vertical: 8,
                           ),
                         child: SingleChildScrollView(

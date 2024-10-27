@@ -32,12 +32,10 @@ class MyApp extends StatelessWidget {
       home: StreamBuilder(
           stream: FirebaseAuth.instance.authStateChanges(),
           builder: (context, snapshot){
-            if(snapshot.hasData){
-              return const HomeScreen();
-            }else{
-              LoginScreen();
+            if(!snapshot.hasData){
+              return  LoginScreen();();
             }
-           return Container();
+           return HomeScreen();
           }
       ),
     );
