@@ -2,6 +2,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import '../components/display_place.dart';
 import '../components/search_bar_filter.dart';
 import 'display_total_price.dart';
 
@@ -13,9 +14,12 @@ class ExploreScreen extends StatefulWidget {
 }
 
 class _ExploreScreenState extends State<ExploreScreen> {
+
   // collection for category
   final CollectionReference categoryCollection =
   FirebaseFirestore.instance.collection("AppCategory");
+
+
 
   int selectedIndex = 0;
   @override
@@ -39,7 +43,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     DisplayTotalPrice(),
                     SizedBox(height: 15),
                     // displat the place items
-                    // DisplayPlace(),
+                    DisplayPlace(),
 
                   ],
                 ),
