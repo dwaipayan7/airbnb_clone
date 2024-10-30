@@ -2,6 +2,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import '../components/custom_info_window.dart';
 import '../components/display_place.dart';
 import '../components/search_bar_filter.dart';
 import 'display_total_price.dart';
@@ -54,7 +55,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       ),
       // for google map
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      // floatingActionButton: const MapWithCustomInfoWindows(),
+      floatingActionButton: const MapWithCustomInfoWindow(),
     );
   }
 
