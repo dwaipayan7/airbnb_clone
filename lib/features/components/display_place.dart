@@ -1,4 +1,5 @@
 
+import 'package:airbnb_clone/features/screen/place_details.dart';
 import 'package:another_carousel_pro/another_carousel_pro.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -35,7 +36,8 @@ class _DisplayPlaceState extends State<DisplayPlace> {
                 ),
                 child: GestureDetector(
                   onTap: () {
-
+                    Navigator.push(context, MaterialPageRoute(
+                        builder: (context) => PlaceDetails(place: place)));
                   },
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
