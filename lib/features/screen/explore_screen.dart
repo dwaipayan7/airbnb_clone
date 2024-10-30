@@ -55,7 +55,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
       ),
       // for google map
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: const MapWithCustomInfoWindow(),
+      floatingActionButton: const MapWithCustomInfoWindows(),
     );
   }
 
